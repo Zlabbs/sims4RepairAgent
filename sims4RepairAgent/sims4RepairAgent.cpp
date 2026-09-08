@@ -11,6 +11,7 @@
 #include "UIShared/ModElements/SIMS_CC_ID_ExecPath.h"
 #include "UIShared/ModElements/KeyboardEvents.h"
 #include "MediaShared/ProgramClass/SDLProgramClass.h"
+#include "StandardShared/ConOutput/ConOutput.h"
 #include "UIShared/AssetDecoder.h"
 
 #include "packageMounting.h"

@@ -9,9 +9,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentScriptUpdater", "Agent
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "#MediaShared", "#MediaShared\#MediaShared.vcxitems", "{5E9AFE79-B57F-4CF2-BBF0-A42FB5B477BB}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "#StandardShared", "#StandardShared\#StandardShared.vcxitems", "{AFCD57A6-E66E-45F6-9EA7-67957A0B6C6B}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "#UIShared", "#UIShared\#UIShared.vcxitems", "{7A04B2EA-5E79-412D-809E-82D0D0483642}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "#StandardShared", "#StandardShared\#StandardShared.vcxitems", "{AFCD57A6-E66E-45F6-9EA7-67957A0B6C6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
