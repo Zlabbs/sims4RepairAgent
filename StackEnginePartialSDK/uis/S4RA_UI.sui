@@ -1,0 +1,1017 @@
+<uiObject>
+	<class>UITreeContiner</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]shouldRender[@]true[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]shouldReciveEvents[@]true[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]shouldDebugRender[@]1[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_ScreenRoot</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]posAdd[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]sizeSubtract[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>[@]editorSizeOverride[@]500,600,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_ColorBox</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]CB_Background[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]0,200,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_CC_TextElement</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]T_productTag[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]22[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]a zLabbs project[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]0,0,0,128,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]2[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]-4,4,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,20,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_CC_ImageBox</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]IB_ToolImage[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]imagePath[@]textures\ti.png[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]128,64,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_HorizontalList</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]HL_TabsRow[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]compact[@]true[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]collapseToContents[@]false[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]spacing[@]2[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]8,80,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-16,20,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_ID_HideButton</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]TB_TabButton1[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]tagNameBoxToRender[@]tab1[@][@]</fieldEntry>
+		<fieldEntry>(str[?]) [@]tagNamesOfBoxesToHide[@]tab2,tab3,[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]lineThickness[@]2[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]0,100,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorOutline[@]0,50,150,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNormBoxVis[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorOutlineBoxVis[@]10,100,150,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]80,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_ID_ReactiveTextElement</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]auto fixes[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_ID_HideButton</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]TB_TabButton2[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]tagNameBoxToRender[@]tab2[@][@]</fieldEntry>
+		<fieldEntry>(str[?]) [@]tagNamesOfBoxesToHide[@]tab1,tab3,[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]lineThickness[@]2[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]0,100,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorOutline[@]0,50,150,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNormBoxVis[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorOutlineBoxVis[@]10,100,150,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]80,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_ID_ReactiveTextElement</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]search[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_ID_HideButton</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]TB_TabButton3[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]tagNameBoxToRender[@]tab3[@][@]</fieldEntry>
+		<fieldEntry>(str[?]) [@]tagNamesOfBoxesToHide[@]tab1,tab2,[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]lineThickness[@]2[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]0,100,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorOutline[@]0,50,150,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNormBoxVis[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorOutlineBoxVis[@]10,100,150,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]80,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_ID_ReactiveTextElement</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]credits[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_ColorBoxOutline</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]CBO_TabViewArea[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]lineThickness[@]2[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]0,50,150,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]8,98,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-16,-128,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_HideableBox</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]HB_Tab1[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@]tab1[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]isHidden[@]true[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]ingoreResetEvents[@]false[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_ID_SSS_VerticalScroller</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_main[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@]scr_main[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]barThickness[@]10[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]minScrollerHeight[@]40[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]hideBarIfUneeded[@]false[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]viewerVerticalPadding[@]11[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]childrenVerticalPadding[@]-11[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]50,50,50,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]40,40,40,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorBackground[@]10,10,10,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorSeparator[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]-2,13,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,-26,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_TextElement</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]T_TabTittle[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]28,[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]Fixes the tool thinks you need.[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]4,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,32,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>obsolete</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]?S4_AutoFixRegion[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]cclass[@]SIMS_CC_ID_AutoFixes[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]4,40,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-4,600,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_SSS_ScissorModifyer</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_end[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]isEnd[@]true[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_ID_ScrollerButton</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_up[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]scrollersName[@]scr_main[@][@]</fieldEntry>
+		<fieldEntry>(int(0-1)) [@]scrollDirection[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]scrollAmount[@]16[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]takeWheelInput[@]true[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]imageSpacing[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]30,30,30,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]40,40,40,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorSeparator[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorArrow[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]-2,2,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]11,11,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]1,0[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_ID_ScrollerButton</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_down[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]scrollersName[@]scr_main[@][@]</fieldEntry>
+		<fieldEntry>(int(0-1)) [@]scrollDirection[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]scrollAmount[@]16[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]takeWheelInput[@]true[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]imageSpacing[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]30,30,30,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]40,40,40,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorSeparator[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorArrow[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]-2,-2,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]11,11,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]1,1,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_HideableBox</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]HB_Tab2[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@]tab2[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]isHidden[@]true[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]ingoreResetEvents[@]false[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_ID_SSS_VerticalScroller</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_mainB[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]barThickness[@]10[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]minScrollerHeight[@]40[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]hideBarIfUneeded[@]false[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]viewerVerticalPadding[@]11[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]childrenVerticalPadding[@]-11[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]50,50,50,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]40,40,40,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorBackground[@]10,10,10,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorSeparator[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]-2,13,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,-26,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_TextElement</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]T_TabTitle[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]28[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]Describe the issue your having for fix.[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]4,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,32,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>obsolete</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]?S4_ItemSearch[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]cclass[@]SIMS_CC_ID_SearchBox[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]8,40,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-24,20,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorNorm[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorOut[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorText[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]lineThickness[@]1[@][@]</fieldEntry>
+		<fieldEntry>[@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>[@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>[@]blankText[@]input issue...[@][@]</fieldEntry>
+		<fieldEntry>[@]blankTextColor[@]80,80,80,255,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>obsolete</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]?S4_MasterList[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]cclass[@]SIMS_CC_ID_MasterList[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]4,68,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-4,600,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_SSS_ScissorModifyer</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_endB[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]isEnd[@]true[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_ID_ScrollerButton</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_upB[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]scrollersName[@]scr_main[@][@]</fieldEntry>
+		<fieldEntry>(int(0-1)) [@]scrollDirection[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]scrollAmount[@]16[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]takeWheelInput[@]true[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]imageSpacing[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]30,30,30,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]40,40,40,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorSeparator[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorArrow[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]-2,2,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]11,11,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]1,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_ID_ScrollerButton</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]scr_downB[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]scrollersName[@]scr_main[@][@]</fieldEntry>
+		<fieldEntry>(int(0-1)) [@]scrollDirection[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]scrollAmount[@]16[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]takeWheelInput[@]true[@][@]</fieldEntry>
+		<fieldEntry>(int) [@]imageSpacing[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]30,30,30,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]40,40,40,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorSeparator[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorArrow[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]-2,-2,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]11,11,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]1,1,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_HideableBox</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]HB_Tab3[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@]tab3[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]isHidden[@]false[@][@]</fieldEntry>
+		<fieldEntry>(bool) [@]ingoreResetEvents[@]false[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_ImageBox</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]imagePath[@]textures\csta.png[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]2,132,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-4,126,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_CC_ImageBox</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]imagePath[@]textures\csdl.png[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]2,2,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-4,126,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_CC_ID_ReactiveTextElement</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]T_PathText[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]Put where the sims 4 folder is in here:[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]200,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]0[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]8,-62,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-16,40,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,1,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>obsolete</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]?S4_SimsPath[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@]execPath[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]cclass[@]SIMS_CC_ID_ExecPath[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]8,-62,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-16,20,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorNorm[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorOut[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorText[@]0,0,0,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>[@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>[@]lineThickness[@]1[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>obsolete</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]?S4_Donate[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]cclass[@]SIMS_ID_DonateButton[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]8,-30,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-16,20,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>[@]lineThickness[@]2[@][@]</fieldEntry>
+		<fieldEntry>[@]colorHover[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorNorm[@]0,100,255,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorOutline[@]0,50,150,255,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_ID_ReactiveTextElement</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]donate to the tools develoment[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>obsolete</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]?S4_Redownload[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]cclass[@]SIMS_ID_DownloadButton[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]8,-6,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]-16,20,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>[@]lineThickness[@]2[@][@]</fieldEntry>
+		<fieldEntry>[@]colorHover[@]0,150,255,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorNorm[@]0,100,255,255,[@][@]</fieldEntry>
+		<fieldEntry>[@]colorOutline[@]0,50,150,255,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+<uiObject>
+	<class>UIE_CC_ID_ReactiveTextElement</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(int) [@]textSize[@]18[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]font[@]fonts\mainFont.ttf[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]text[@]download latest patches[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorNorm[@]200,200,200,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]colorHover[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]horizontalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int(0-2)) [@]verticalAlignment[@]1[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>obsolete</class>
+
+	<isExpanded>1</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@]?S4_ProgressBar[@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]cclass[@]SIMS_UpdateProgressBar[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]0,16,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,1,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,1,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+
+
+
+	</children>
+</uiObject>
+

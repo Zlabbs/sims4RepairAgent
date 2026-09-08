@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sims4RepairAgent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\AssestPackagingSource.lib" />
+    <Library Include="lib\UISource.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="lib\AssestPackagingSource\AssestPackagingSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\UISource\UISource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packageMounting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="scriptManagment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="saveAndLoadExecPath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lib\AssestPackagingSource\AssestPackagingSource.pdb" />
+    <None Include="lib\AssestPackagingSource\AssestPackagingSource.exp" />
+    <None Include="lib\AssestPackagingSource\AssestPackagingSource.dll" />
+    <None Include="packages.config" />
+    <None Include="lib\UISource\UISource.pdb" />
+    <None Include="lib\UISource\UISource.exp" />
+    <None Include="lib\UISource\UISource.dll" />
+  </ItemGroup>
+</Project>

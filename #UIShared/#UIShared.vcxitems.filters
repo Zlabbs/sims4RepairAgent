@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\AssetDecoder.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_TextElement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIComponent_ConnectionContext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ColorBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\MasterList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_ImageBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_SceneAttachedRoot.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ScreenRoot.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ProgressBar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_HideableBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIComponent_InputData.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_VerticalList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_HorizontalList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ColorBoxOutline.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ID_Window.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_ID_Button.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ID_HideButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_ID_ReactiveTextElement.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ID_BlockRenderButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_ID_KeyButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CollapseToContentsBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_KeyEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_KeyEventRenderToggle.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ID_SSS_VerticalScroller.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIComponent_SDLScissorStack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_SSS_ScissorModifyer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_ID_HorizontalSlider.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_CC_ID_CheckBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_ID_ScrollerButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\Elements\UIE_hidden_DebugBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\SIMS_ID_DownloadButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\SIMS_ID_DonateButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\SIMS_CC_ID_AutoFixes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\SIMS_CC_ID_SearchBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\SIMS_CC_ID_MasterList.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\SIMS_CC_ID_ExecPath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\KeyboardEvents.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)UIShared\ModElements\SIMS_UpdateProgressBar.h" />
+  </ItemGroup>
+</Project>
