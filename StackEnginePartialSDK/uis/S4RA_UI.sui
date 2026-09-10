@@ -762,11 +762,11 @@
 	<fields>
 		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
 		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
-		<fieldEntry>(str) [@]imagePath[@]textures\csta.png[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]imagePath[@]textures\csdl.png[@][@]</fieldEntry>
 		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
-		<fieldEntry>(int[2]) [@]offsetPos[@]2,132,[@][@]</fieldEntry>
-		<fieldEntry>(int[2]) [@]offsetSize[@]-4,126,[@][@]</fieldEntry>
-		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]2,2,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]480,128,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
 		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
 		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
 
@@ -786,11 +786,11 @@
 	<fields>
 		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
 		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
-		<fieldEntry>(str) [@]imagePath[@]textures\csdl.png[@][@]</fieldEntry>
+		<fieldEntry>(str) [@]imagePath[@]textures\csta.png[@][@]</fieldEntry>
 		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
-		<fieldEntry>(int[2]) [@]offsetPos[@]2,2,[@][@]</fieldEntry>
-		<fieldEntry>(int[2]) [@]offsetSize[@]-4,126,[@][@]</fieldEntry>
-		<fieldEntry>(float[2]) [@]percentageSize[@]1,0,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]2,134,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]480,128,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
 		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
 		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
 

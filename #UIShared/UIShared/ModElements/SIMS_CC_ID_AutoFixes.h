@@ -148,7 +148,7 @@ namespace UIShared
 				m_titleText.SetHorizontalAlignment(mediaShared::media::SDLText_HorizontalLocation::HLeft);
 				m_titleText.SetVerticalAlignment(mediaShared::media::SDLText_VerticalLocation::VCenter);
 
-				m_descriptionText.SetHorizontalAlignment(mediaShared::media::SDLText_HorizontalLocation::HScrollLeft);
+				m_descriptionText.SetHorizontalAlignment(mediaShared::media::SDLText_HorizontalLocation::HLeft);
 				m_descriptionText.SetVerticalAlignment(mediaShared::media::SDLText_VerticalLocation::VCenter);
 			}
 
