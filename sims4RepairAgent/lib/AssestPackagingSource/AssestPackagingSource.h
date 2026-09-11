@@ -4,7 +4,7 @@
 
 /*=====================================================================================\
 * Designed by Kyle Edwards.                                                            *
-* Created on the 10/7/2026. Last updated 27/8/2026.                                    *
+* Created on the 10/7/2026. Last updated 11/9/2026.                                    *
 *=====================================================================================*/
 
 #define SE_APS__MAX_ASSET_PATH_LENGTH 2048
@@ -42,6 +42,9 @@ namespace stackExternal
 			AssetObjectContainer(const char* item, unsigned int itemLength); ///how you load data into the contents
 			~AssetObjectContainer();
 			AssetObjectContainer& operator=(const AssetObjectContainer& t) = delete;
+			AssetObjectContainer(AssetObjectContainer const&) = delete;
+			AssetObjectContainer(AssetObjectContainer&& h) = default;
+
 
 
 			/**
@@ -160,7 +163,8 @@ namespace stackExternal
 			PackObjectContainer();
 			~PackObjectContainer();
 			PackObjectContainer& operator=(const PackObjectContainer& t) = delete;
-
+			PackObjectContainer(PackObjectContainer const&) = delete;
+			PackObjectContainer(PackObjectContainer&& h) = default;
 
 			//pack createing and destruction
 			/**

@@ -4,7 +4,7 @@
 
 /*=====================================================================================\
 * Designed by Kyle Edwards.                                                            *
-* Created on the 10/7/2026. Last updated 31/8/2026.                                    *
+* Created on the 10/7/2026. Last updated 11/9/2026.                                    *
 *=====================================================================================*/
 
 #define SE_UIS__MAX_NAME_LEN 2048
@@ -50,7 +50,7 @@ namespace stackExternal
 
 			float percentageSize[2] = { 0, 0 }; //child{w,h} = parent{w,h} * child{psw,psh};
 			float anchorPos[2] = { 0, 0 }; //child{x,y} = parent{x,y} +(parent{w,h} * child{apx,apy})
-			float pivotPos[2] = { 0, 0 }; //child{x,y} = child{x,y} -(child{w,h} * child{pp,pp});
+			float pivotPos[2] = { 0, 0 }; //child{x,y} = child{x,y} -(child{w,h} * child{ppx,ppy});
 		};
 
 		/**
@@ -101,10 +101,11 @@ namespace stackExternal
 			void RemoveLinks(); ///call on an elements deleteion for everything to be freeded correctly
 
 		public:
-
 			UIElement();
 			virtual ~UIElement();
 			UIElement& operator=(const UIElement& t) = delete;
+			UIElement(UIElement const&) = delete;
+			UIElement(UIElement&& h) = default;
 
 
 			/**
@@ -258,6 +259,8 @@ namespace stackExternal
 			UITreeContiner();
 			~UITreeContiner();
 			UITreeContiner& operator=(const UITreeContiner& t) = delete;
+			UITreeContiner(UITreeContiner const&) = delete;
+			UITreeContiner(UITreeContiner&& h) = default;
 
 
 			/**
