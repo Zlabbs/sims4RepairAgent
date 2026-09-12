@@ -325,7 +325,7 @@
 <uiObject>
 	<class>UIE_HideableBox</class>
 
-	<isExpanded>1</isExpanded>
+	<isExpanded>0</isExpanded>
 
 	<fields>
 		<fieldEntry>(str) [@]uiEditorName[@]HB_Tab1[@][@]</fieldEntry>
@@ -516,7 +516,7 @@
 <uiObject>
 	<class>UIE_HideableBox</class>
 
-	<isExpanded>1</isExpanded>
+	<isExpanded>0</isExpanded>
 
 	<fields>
 		<fieldEntry>(str) [@]uiEditorName[@]HB_Tab2[@][@]</fieldEntry>
@@ -738,7 +738,7 @@
 <uiObject>
 	<class>UIE_HideableBox</class>
 
-	<isExpanded>1</isExpanded>
+	<isExpanded>0</isExpanded>
 
 	<fields>
 		<fieldEntry>(str) [@]uiEditorName[@]HB_Tab3[@][@]</fieldEntry>
