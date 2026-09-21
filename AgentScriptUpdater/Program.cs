@@ -12,7 +12,6 @@ namespace AgentScriptUpdater
         static string m_downloadDirectiory = "https://github.com/Zlabbs/sims4RepairAgent_Scripts/archive/refs/heads/main.zip";
 
 
-
         //main code
         static bool Download(string dowloadFrom, string dowloadTo)
         {
