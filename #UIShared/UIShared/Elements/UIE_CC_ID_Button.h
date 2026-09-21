@@ -64,7 +64,7 @@ namespace UIShared
 					void* eventParentObject = UIE_SceneAttachedRoot::GetUiOwner(); //the thing rendering this ui if its screen render this would be nullptr
 					stackExternal::UI::UITreeContiner* ownerOfUiTree = GetAttachedTree();
 
-					RunSript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree);
+					RunScript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree);
 					m_inHoverMode = true;
 				}
 			}
@@ -105,7 +105,7 @@ namespace UIShared
 						void* eventParentObject = UIE_SceneAttachedRoot::GetUiOwner(); //the thing rendering this ui if its screen render this would be nullptr
 						stackExternal::UI::UITreeContiner* ownerOfUiTree = GetAttachedTree();
 
-						RunSript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree);
+						RunScript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree);
 						return true;
 					}
 				}

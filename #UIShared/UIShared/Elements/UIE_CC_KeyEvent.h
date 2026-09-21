@@ -47,12 +47,12 @@ namespace UIShared
 						void* eventParentObject = UIE_SceneAttachedRoot::GetUiOwner(); //the thing rendering this ui if its screen render this would be nullptr
 						stackExternal::UI::UITreeContiner* ownerOfUiTree = GetAttachedTree();
 
-						RunSript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree); //for key presses that involve both keyboard and mouse
+						RunScript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree); //for key presses that involve both keyboard and mouse
 
 
 						eventInScriptToRun = "OnMousePress";
 						dataToPassOnToScript = std::to_string(event->button.button);
-						RunSript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree); //for mouse presses only
+						RunScript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree); //for mouse presses only
 						return true;
 					}
 
@@ -66,12 +66,12 @@ namespace UIShared
 						void* eventParentObject = UIE_SceneAttachedRoot::GetUiOwner(); //the thing rendering this ui if its screen render this would be nullptr
 						stackExternal::UI::UITreeContiner* ownerOfUiTree = GetAttachedTree();
 
-						RunSript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree); //for key presses that involve both keyboard and mouse
+						RunScript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree); //for key presses that involve both keyboard and mouse
 
 
 						eventInScriptToRun = "OnKeyPress";
 						dataToPassOnToScript = std::to_string(key);
-						RunSript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree);
+						RunScript(m_scriptData, eventInScriptToRun, dataToPassOnToScript, runnerOfScript, eventParentObject, ownerOfUiTree);
 						return true;
 					}
 				}

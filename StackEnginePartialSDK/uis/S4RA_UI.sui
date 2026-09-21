@@ -738,7 +738,7 @@
 <uiObject>
 	<class>UIE_HideableBox</class>
 
-	<isExpanded>0</isExpanded>
+	<isExpanded>1</isExpanded>
 
 	<fields>
 		<fieldEntry>(str) [@]uiEditorName[@]HB_Tab3[@][@]</fieldEntry>
@@ -790,6 +790,30 @@
 		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
 		<fieldEntry>(int[2]) [@]offsetPos[@]2,134,[@][@]</fieldEntry>
 		<fieldEntry>(int[2]) [@]offsetSize[@]480,128,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
+		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>
+
+	</fields>
+
+	<children>
+
+
+	</children>
+</uiObject>
+
+<uiObject>
+	<class>UIE_CC_ImageBox</class>
+
+	<isExpanded>0</isExpanded>
+
+	<fields>
+		<fieldEntry>(str) [@]uiEditorName[@][@][@]</fieldEntry>
+		<fieldEntry>(cstr) [@]tagName[@][@][@]</fieldEntry>
+		<fieldEntry>(str) [@]imagePath[@]textures\cstaff.png[@][@]</fieldEntry>
+		<fieldEntry>(int[4]) [@]color[@]255,255,255,255,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetPos[@]2,266,[@][@]</fieldEntry>
+		<fieldEntry>(int[2]) [@]offsetSize[@]480,64,[@][@]</fieldEntry>
 		<fieldEntry>(float[2]) [@]percentageSize[@]0,0,[@][@]</fieldEntry>
 		<fieldEntry>(float[2]) [@]anchorPos[@]0,0,[@][@]</fieldEntry>
 		<fieldEntry>(float[2]) [@]pivotPos[@]0,0,[@][@]</fieldEntry>

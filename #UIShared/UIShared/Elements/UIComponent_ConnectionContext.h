@@ -47,7 +47,7 @@ namespace UIShared
 			return nullptr;
 		}
 
-		void RunSript(void* script, std::string eventName, std::string customValue, void* self, void* parent, void* root)
+		void RunScript(void* script, std::string eventName, std::string customValue, void* self, void* parent, void* root)
 		{
 			if (m_runSript != nullptr)
 			{

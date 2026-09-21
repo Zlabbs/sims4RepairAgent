@@ -1,5 +1,7 @@
 #pragma once
 
+#define NOMINMAX
+
 #include "SDL.h"
 
 #include <string>
@@ -10,6 +12,7 @@
 #include <atomic>
 #include <cstdlib>
 #include <Lmcons.h>
+#include <windows.h>
 
 #include "AssestPackagingSource/AssestPackagingSource.h"
 
@@ -22,6 +25,7 @@ namespace sfra
 		struct ScriptData
 		{
 			bool needsAdmin = false;
+			bool needsAdminFromAgent = false;
 			std::string autoCheckScript = "";
 			std::string runScript = "";
 			std::string title = "";
@@ -38,6 +42,7 @@ namespace sfra
 
 		namespace globals
 		{
+			std::string n_sims4RepairAgentDonateWebLocation = "";
 			std::string n_sims4Location = "SM_G_S4L: error value not set";
 			ScriptSet n_masterScriptSet = ScriptSet(); ///should not be change by anything other than the functon in the exterior namespace
 			ScriptSet n_searchResults = ScriptSet();
@@ -73,7 +78,15 @@ namespace sfra
 			ZeroMemory(&execProcessInfo, sizeof(execProcessInfo));
 
 			unsigned long exitCode = 0;
-			CreateProcessA(pathToPackage.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &execStartUpInfo, &execProcessInfo);
+			if (CreateProcessA(pathToPackage.c_str(), NULL, NULL, NULL, FALSE, 0, NULL, NULL, &execStartUpInfo, &execProcessInfo) == 0)
+			{
+				CloseHandle(execProcessInfo.hProcess);
+				CloseHandle(execProcessInfo.hThread);
+				hidden::n_updateSuccessful = false;
+				hidden::n_updateInProgress = false;
+				return;
+			}
+
 			WaitForSingleObject(execProcessInfo.hProcess, INFINITE);
 			GetExitCodeProcess(execProcessInfo.hProcess, &exitCode);
 
@@ -146,7 +159,7 @@ namespace sfra
 
 			if (fileReader.is_open() == false || fileReader.good() == false || fileReader.eof() == true) //could not access package
 			{
-				standardShared::con::PrintText(standardShared::con::PrintType::Warning, "WARNING: ", "master script could not be located at:", pathToAsset);
+				standardShared::con::PrintText(standardShared::con::PrintType::Warning, "WARNING SFRA_SCRMAN_GMSA: ", "master script could not be located at:", pathToAsset);
 				return stackExternal::assets::AssetObjectContainer();
 			}
 
@@ -179,6 +192,8 @@ namespace sfra
 			//clears out old junk data
 			globals::n_masterScriptSet.clear();
 
+			globals::n_sims4RepairAgentDonateWebLocation = std::string(asset->GetSubObjectsByScope(0, "<donateWebLink>", "</donateWebLink>").GetContents(), asset->GetSubObjectsByScope(0, "<donateWebLink>", "</donateWebLink>").GetContentsLength());
+
 
 			//go thougth the asset and reflects everying out to the master script set
 			unsigned int jumpPoint = 0;
@@ -189,6 +204,7 @@ namespace sfra
 
 				//admin check, main script, auto test script
 				currentScriptReal.needsAdmin = currentScriptAsset.GetSubObjectsByScope(0, "<needsAdmin>", "</needsAdmin>").GetContentsBool();
+				currentScriptReal.needsAdminFromAgent = currentScriptAsset.GetSubObjectsByScope(0, "<needsAdminFromAgent>", "</needsAdminFromAgent>").GetContentsBool();
 				currentScriptReal.runScript = std::string(currentScriptAsset.GetSubObjectsByScope(0, "<runScript>", "</runScript>").GetContents(), currentScriptAsset.GetSubObjectsByScope(0, "<runScript>", "</runScript>").GetContentsLength());
 				currentScriptReal.autoCheckScript = std::string(currentScriptAsset.GetSubObjectsByScope(0, "<autoCheckScript>", "</autoCheckScript>").GetContents(), currentScriptAsset.GetSubObjectsByScope(0, "<autoCheckScript>", "</autoCheckScript>").GetContentsLength());
 				
@@ -239,7 +255,15 @@ namespace sfra
 			{
 				if (globals::n_masterScriptSet[i].autoCheckScript != "")
 				{
-					//globals::n_masterScriptSet[i].inter_didAutoCheckScriptSayWeNeedToRun = (WinExec(("cd \"" + globals::n_sims4Location + "\" && " + pathToAssetRaw + globals::n_masterScriptSet[i].autoCheckScript).c_str(), SW_HIDE) != 0);
+					char* pathToAssetRaw = SDL_GetPrefPath("S4RA", "out\\sims4RepairAgent_Scripts-main");
+					std::string pathToAsset = std::string(pathToAssetRaw);
+					SDL_free(pathToAssetRaw);
+
+
+					std::string commandLineInstructions = "/c call " + pathToAsset + globals::n_masterScriptSet[i].autoCheckScript;
+					char commandLineInterfaceProgramRaw[] = "C:\\Windows\\System32\\cmd.exe";
+					char* commandLineInstructionsRaw = (char*)(commandLineInstructions.c_str());
+
 
 					STARTUPINFOA execStartUpInfo;
 					PROCESS_INFORMATION execProcessInfo;
@@ -249,7 +273,11 @@ namespace sfra
 					ZeroMemory(&execProcessInfo, sizeof(execProcessInfo));
 
 					unsigned long exitCode = 0;
-					CreateProcessA((pathToAssetRaw + globals::n_masterScriptSet[i].autoCheckScript).c_str(), NULL, NULL, NULL, FALSE, 0, NULL, globals::n_sims4Location.c_str(), &execStartUpInfo, &execProcessInfo);
+					if (CreateProcessA(commandLineInterfaceProgramRaw, commandLineInstructionsRaw, NULL, NULL, FALSE, NORMAL_PRIORITY_CLASS | CREATE_NO_WINDOW, NULL, NULL, &execStartUpInfo, &execProcessInfo) == false)
+					{
+						standardShared::con::PrintText(standardShared::con::PrintType::Warning, "WARNING SFRA_SCRMAN_RARC:", "auto run process creation failed attempted to create: ", commandLineInstructions);
+					}
+
 					WaitForSingleObject(execProcessInfo.hProcess, INFINITE);
 					GetExitCodeProcess(execProcessInfo.hProcess, &exitCode);
 
@@ -294,24 +322,26 @@ namespace sfra
 		}
 
 
-		void RunScript(ScriptData data)
+		void RunScript(ScriptData* data)
 		{
+			data->inter_didAutoCheckScriptSayWeNeedToRun = false;
+
 			char* pathToAssetRaw = SDL_GetPrefPath("S4RA", "out\\sims4RepairAgent_Scripts-main");
 			std::string pathToAsset = std::string(pathToAssetRaw);
 			SDL_free(pathToAssetRaw);
 
-			STARTUPINFOA execStartUpInfo;
-			PROCESS_INFORMATION execProcessInfo;
+			std::string commandLineInstructions = "/c call " + pathToAsset + data->runScript;
+			char commandLineInterfaceProgramRaw[] = "C:\\Windows\\System32\\cmd.exe";
+			char* commandLineInstructionsRaw = (char*)(commandLineInstructions.c_str());
 
-			ZeroMemory(&execStartUpInfo, sizeof(execStartUpInfo));
-			execStartUpInfo.cb = sizeof(execStartUpInfo);
-			ZeroMemory(&execProcessInfo, sizeof(execProcessInfo));
-
-			unsigned long exitCode = 0;
-			CreateProcessA((pathToAssetRaw + data.runScript).c_str(), NULL, NULL, NULL, FALSE, 0, NULL, globals::n_sims4Location.c_str(), &execStartUpInfo, &execProcessInfo);
-
-			CloseHandle(execProcessInfo.hProcess);
-			CloseHandle(execProcessInfo.hThread);
+			if (data->needsAdminFromAgent == false)
+			{
+				ShellExecuteA(NULL, "open", commandLineInterfaceProgramRaw, commandLineInstructionsRaw, globals::n_sims4Location.c_str(), SW_HIDE);
+			}
+			else
+			{
+				ShellExecuteA(NULL, "runas", commandLineInterfaceProgramRaw, commandLineInstructionsRaw, globals::n_sims4Location.c_str(), SW_HIDE);
+			}
 		}
 
 

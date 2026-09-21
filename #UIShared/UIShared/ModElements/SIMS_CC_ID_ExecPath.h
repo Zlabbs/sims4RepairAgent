@@ -1,10 +1,7 @@
 #pragma once
 
-#define NOMINMAX
-
 #include <chrono>
 #include <string>
-#include <windows.h>
 
 #include "SDL.h"
 

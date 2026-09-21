@@ -55,7 +55,7 @@ namespace UIShared
 					m_bgTexture.SetSize({ bounds.offsetSize[0], 48 });
 					m_bgTexture.RenderImage((SDL_Renderer*)renderingContext);
 
-					if (sfra::scrman::globals::n_masterScriptSet[i].needsAdmin == true)
+					if (sfra::scrman::globals::n_masterScriptSet[i].needsAdmin == true || sfra::scrman::globals::n_masterScriptSet[i].needsAdminFromAgent == true)
 					{
 						m_bgAdminIcon.SetPos({ bounds.offsetPos[0] + bounds.offsetSize[0] - (28), bounds.offsetPos[1] + bounds.offsetSize[1] +2 });
 						m_bgAdminIcon.RenderImage((SDL_Renderer*)renderingContext);
@@ -116,7 +116,7 @@ namespace UIShared
 
 							if (canRunEvent == true && SDL_HasIntersection(&mousePos, &renderRectCliped) == true) //go to input mode
 							{
-								sfra::scrman::RunScript(sfra::scrman::globals::n_masterScriptSet[i]);
+								sfra::scrman::RunScript(&sfra::scrman::globals::n_masterScriptSet[i]);
 								//std::cout << "click auto button: " << i << "\n";
 							}
 

@@ -71,6 +71,10 @@ int main(int argc, char* argv[])
 		UIShared::SIMS_CC_ID_ExecPath* execPathUIObject = ((UIShared::SIMS_CC_ID_ExecPath*)treeContainerMain->GetElementByTagName("execPath"));
 		execPathUIObject->SetPath(execPath);
 	}
+	else
+	{
+		//sfra::svldExecPath::SaveExecPath(sfra::scrman::globals::n_sims4Location);
+	}
 
 
 	//dowlaod the latest version of the scripts db (MUST BE DONE BEFORE SCRIPTS ARE USED FOR SECURITY REASONS)

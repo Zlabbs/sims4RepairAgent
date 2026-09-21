@@ -25,7 +25,11 @@ namespace sfra
 			{
 				char letter = '\0';
 				fileReader.read(&letter, 1);
-				returnPath = returnPath + letter;
+				
+				if (letter != '\0')
+				{
+					returnPath = returnPath + letter;
+				}
 			}
 
 			fileReader.close();
@@ -44,7 +48,7 @@ namespace sfra
 
 			fileWriter.open(pathToAsset, std::ios::out | std::ios::in | std::ios::trunc);
 
-			fileWriter << path;
+			fileWriter.write(path.c_str(), path.length());
 
 			fileWriter.close();
 		}

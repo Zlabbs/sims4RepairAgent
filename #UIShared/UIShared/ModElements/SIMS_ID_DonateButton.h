@@ -65,7 +65,7 @@ namespace UIShared
 					if (SDL_HasIntersection(&mousePos, &renderRect) == true)
 					{
 						//char text[53] = {"start https://www.youtube.com/watch?v=dQw4w9WgXcQ"};
-						ShellExecuteA(NULL, "open", "https://www.youtube.com/watch?v=dQw4w9WgXcQ", NULL, NULL, SW_HIDE);
+						ShellExecuteA(NULL, "open", sfra::scrman::globals::n_sims4RepairAgentDonateWebLocation.c_str(), NULL, NULL, SW_HIDE);
 
 						return true;
 					}
