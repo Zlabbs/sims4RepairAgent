@@ -24,6 +24,11 @@ namespace UIShared
 		bool m_inDragMode = false;
 
 	protected:
+		virtual void OnRemove() override
+		{
+			delete this;
+		}
+
 		virtual stackExternal::UI::UITransformBounds GetWorldTransformBoundsForChild(UIElement* childInQuestion) override
 		{
 			stackExternal::UI::UITransformBounds parentBounds = stackExternal::UI::UITransformBounds();

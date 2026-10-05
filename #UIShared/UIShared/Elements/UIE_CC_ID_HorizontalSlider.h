@@ -26,6 +26,10 @@ namespace UIShared
 		bool m_inDragMode = false;
 
 	protected:
+		virtual void OnRemove() override
+		{
+			delete this;
+		}
 
 		virtual void OnRender(void* renderingContext, bool renderDebug) override
 		{

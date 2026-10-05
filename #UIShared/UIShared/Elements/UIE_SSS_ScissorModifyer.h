@@ -11,6 +11,11 @@ namespace UIShared
 	class UIE_SSS_ScissorModifyer : public stackExternal::UI::UIElement, UIComponent_SDLScissorStack
 	{
 	protected:
+		virtual void OnRemove() override
+		{
+			delete this;
+		}
+
 		virtual void OnRender(void* renderingContext, bool renderDebug) override
 		{
 			if (m_isEnd == false)

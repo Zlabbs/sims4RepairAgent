@@ -4,7 +4,7 @@
 
 /*=====================================================================================\
 * Designed by Kyle Edwards.                                                            *
-* Created on the 10/7/2026. Last updated 11/9/2026.                                    *
+* Created on the 10/7/2026. Last updated 23/9/2026.                                    *
 *=====================================================================================*/
 
 #define SE_UIS__MAX_NAME_LEN 2048
@@ -92,7 +92,7 @@ namespace stackExternal
 			/**
 			* @brief the best way to avoid memory leaks is to but delete this in here btw.
 			*/
-			virtual void OnRemove(); //put delete this in here
+			virtual void OnRemove() = 0; //put delete this in here
 
 
 			/**
